@@ -331,6 +331,12 @@ class Face:
         return False
 
 
+    def are_points_inside(self, points):
+        if self.path.contains_points(points):
+            return True
+        return False
+
+
     def punch_hole(self, holeFace):
         '''Face class
 
